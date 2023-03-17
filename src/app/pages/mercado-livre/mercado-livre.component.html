@@ -1,0 +1,287 @@
+<body>
+  <header>
+    <div class="search">
+      <div class="icones">
+        <img
+          class="logo"
+          src="../../../assets/mercado-livre-logo-8.png"
+          alt=""
+        />
+        <input
+          class="pesquisar"
+          type="text"
+          placeholder="Buscar produtos, marcas e muito mais"
+          name="search"
+        />
+        <img class="lupa" src="../../../assets/lupa.png" alt="" />
+
+        <div class="cimaEsquerda">
+          <img class="ticket" src="../../../assets/ticket.png" alt="" />
+          <span class="ofertas">Ofertas por tempo ilimitado</span>
+        </div>
+      </div>
+
+      <div class="baixoHeader">
+        <!-- <mat-tab-group class="baixo">
+          <mat-tab label="Categorias"></mat-tab>
+          <mat-tab label="Ofertas do dia"></mat-tab>
+          <mat-tab label="Histórico"></mat-tab>
+          <mat-tab label="Supermercado"></mat-tab>
+          <mat-tab label="Moda"></mat-tab>
+          <mat-tab label="Vender"></mat-tab>
+          <mat-tab label="Contato"></mat-tab>
+        </mat-tab-group> -->
+        <div class="informeCep">
+          <img class="local" src="../../../assets/local.png" alt="" />
+          <div class="local2">
+            <span>Informe seu</span>
+            <span>CEP</span>
+          </div>
+        </div>
+
+        <div class="baixoMeio">
+          <button
+            class="botaoCategoria"
+            button
+            mat-button
+            [matMenuTriggerFor]="menu"
+          >
+            Categorias
+          </button>
+          <mat-menu #menu="matMenu">
+            <button mat-menu-item>Item 1</button>
+            <button mat-menu-item>Item 2</button>
+          </mat-menu>
+          <span>Ofertas do dia</span>
+          <span class="historico">Histórico</span>
+          <span>Supermercado</span>
+          <span>Moda</span>
+          <span>Vender</span>
+          <span>Contato</span>
+
+          <div class="baixoDireto">
+            <button
+              class="botaoCriar"
+              button
+              mat-button
+              [matMenuTriggerFor]="menu"
+            >
+              Crie sua conta
+            </button>
+            <mat-menu #menu="matMenu">
+              <button mat-menu-item>Item 1</button>
+              <button mat-menu-item>Item 2</button>
+            </mat-menu>
+            <span>Compras</span>
+
+            <button
+              class="botaoCriar"
+              button
+              mat-button
+              [matMenuTriggerFor]="menu"
+            >
+              Favoritos
+            </button>
+            <mat-menu #menu="matMenu">
+              <button mat-menu-item>Item 1</button>
+              <button mat-menu-item>Item 2</button>
+            </mat-menu>
+
+            <span class="material-symbols-outlined">notifications</span>
+            <span class="material-symbols-outlined">shopping_cart</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <mat-drawer-container class="example-container">
+      <mat-drawer class="menu" mode="side" opened>
+        <div class="menu1">
+          <span class="material-symbols-outlined"> menu </span>
+          <span>Minha conta</span>
+        </div>
+
+        <div class="menu2">
+          <span class="material-symbols-outlined"> shopping_bag </span>
+          <span>Compras</span>
+          <span class="material-symbols-outlined"> expand_more </span>
+        </div>
+
+        <div class="menu2">
+          <span class="material-symbols-outlined"> sell </span>
+          <span>Vendas</span>
+          <span class="material-symbols-outlined"> expand_more </span>
+        </div>
+
+        <div class="menu2">
+          <span class="material-symbols-outlined"> storefront </span>
+          <span>Mercado Shops</span>
+        </div>
+
+        <div class="menu2">
+          <span class="material-symbols-outlined"> video_library </span>
+          <span>Video e música</span>
+        </div>
+
+        <div class="menu2">
+          <span class="material-symbols-outlined"> receipt </span>
+          <span>Faturamento</span>
+        </div>
+
+        <div class="menu2">
+          <span id="perfil1" class="material-symbols-outlined">
+            account_circle
+          </span>
+          <span>Meu perfil</span>
+        </div>
+
+        <div class="menu2">
+          <span class="material-symbols-outlined"> settings </span>
+          <span>Configurações</span>
+          <span class="material-symbols-outlined"> expand_more </span>
+        </div>
+      </mat-drawer>
+
+
+      <mat-drawer-content class="principal">
+        <mat-card class="cimaPerfil">
+          <div class="configCimaPerfil">
+            <span id="iconePerfil" class="material-symbols-outlined">
+              account_circle
+            </span>
+            <div class="cimaPerfil1">
+              <mat-card-content>Vanessa Schlemper</mat-card-content>
+              <mat-card-content>Nível 4 - Mercado Pontos</mat-card-content>
+            </div>
+          </div>
+        </mat-card>
+
+
+        <mat-card class="cimaPerfil2">
+          <ul class="listaUl">
+
+            <li class="listaLi">
+              <span id="iconBaixo2" class="material-symbols-outlined">
+                account_circle
+              </span>
+
+              <div class="configBaixoPerfil2">
+                <span class="dados">Meus dados</span>
+                <span>Gerencie seus dados pessoais.</span>
+              </div>
+
+              <span id="arrowDireita2" class="material-symbols-outlined">
+                arrow_forward_ios
+                </span>
+            </li>
+            <mat-divider></mat-divider>
+
+            <li class="listaLi">
+              <span id="iconBaixo2" class="material-symbols-outlined">
+                lock
+                </span>
+
+              <div class="configBaixoPerfil3">
+                <span class="dados3">Segurança</span>
+                <span class="dados3-1">Você tem configurações pendentes.</span>
+              </div>
+
+              <span id="arrowDireita2" class="material-symbols-outlined">
+                arrow_forward_ios
+                </span>
+            </li>
+            <mat-divider></mat-divider>
+
+
+            <li class="listaLi">
+              <span id="iconBaixo2" class="material-symbols-outlined">
+                credit_card
+                </span>
+
+              <div class="configBaixoPerfil4">
+                <span class="dados4">Meus cartões</span>
+                <span class="dados4-1">Gerencie seus cartões.</span>
+              </div>
+
+              <span id="arrowDireita2" class="material-symbols-outlined">
+                arrow_forward_ios
+                </span>
+            </li>
+            <mat-divider></mat-divider>
+
+
+            <li class="listaLi">
+              <span id="iconBaixo2" class="material-symbols-outlined">
+                location_on
+                </span>
+
+              <div class="configBaixoPerfil5">
+                <span class="dados5">Endereços</span>
+                <span class="dados5-1">Altere seus endereços ou adicione outro.</span>
+              </div>
+
+              <span id="arrowDireita3" class="material-symbols-outlined">
+                arrow_forward_ios
+                </span>
+            </li>
+            <mat-divider></mat-divider>
+
+
+
+            <li class="listaLi">
+              <span id="iconBaixo2" class="material-symbols-outlined">
+                verified_user
+                </span>
+
+              <div class="configBaixoPerfil6">
+                <span class="dados6">Privacidade</span>
+                <span class="dados6-1">Gerencie o uso das suas informações pessoais.</span>
+              </div>
+
+              <span id="arrowDireita3" class="material-symbols-outlined">
+                arrow_forward_ios
+                </span>
+            </li>
+            <mat-divider></mat-divider>
+
+            <li class="listaLi">
+              <span id="iconBaixo2" class="material-symbols-outlined">
+                chat_bubble
+                </span>
+
+              <div class="configBaixoPerfil7">
+                <span class="dados7">Comunicações</span>
+                <span class="dados7-1">Escolha que tipo de inforamção você quer receber.</span>
+              </div>
+
+              <span id="arrowDireita3" class="material-symbols-outlined">
+                arrow_forward_ios
+                </span>
+            </li>
+            <mat-divider></mat-divider>
+
+            <li class="listaLi">
+              <span id="iconBaixo2" class="material-symbols-outlined">
+                paid
+                </span>
+
+              <div class="configBaixoPerfil8">
+                <span class="dados8">Assinaturas</span>
+                <span class="dados8-1">Gerencie suas assinaturas.</span>
+              </div>
+
+              <span id="arrowDireita3" class="material-symbols-outlined">
+                arrow_forward_ios
+                </span>
+            </li>
+            <mat-divider></mat-divider>
+
+          </ul>
+        </mat-card>
+
+      </mat-drawer-content>
+    </mat-drawer-container>
+  </main>
+</body>

@@ -1,0 +1,376 @@
+header {
+  background-color: yellow;
+  display:flex;
+  flex-direction: column;
+  height: 6.5rem;
+}
+
+
+.search{
+    
+    display: flex;
+    flex-direction: column;
+    
+    .icones{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    height: 20px;
+    margin-top: 1rem;
+    text-align: center;
+    align-items: center;
+
+    .logo {
+        width: 8rem;
+        margin-right: 2rem;
+      }
+    
+    .pesquisar{
+        
+        width: 36rem;
+        height: 30px;
+        padding: 10px;
+        outline: 0;
+        border: none;
+        font-size: 1rem;
+    }
+    
+    .lupa{
+        width: 1.3rem;
+        position: absolute;
+        margin-left: 23rem;
+        border-left: 1px solid gray;
+        padding-left: 0.5rem;
+    }
+
+    .cimaEsquerda{
+        margin-left: 8rem;
+        text-align: center;
+        align-items: center;
+    }
+
+    .ticket{
+        width: 2rem;
+    }
+
+    .ofertas{
+        font-size: 0.8rem;
+    }
+}
+
+    .baixoHeader{
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        align-items: center;
+        margin-top: 1.2rem;
+    
+        .informeCep{
+            display: flex;
+            text-align: center;
+            align-items: center;
+            flex-direction: row;
+            margin-left: 9.4rem;
+
+            .local{
+                width: 1.6rem;
+
+            }
+
+            .local2{
+                display: flex;
+                flex-direction: column;
+                text-align: left;
+                font-size: 0.8rem;
+                margin-top: 0.3rem;
+                color: gray;
+            }
+        }
+
+        .baixoMeio {
+            display: flex;
+            text-align: center;
+            margin-left: 4.1rem;
+            flex-direction: row;
+            gap: 1rem;
+            font-size: 0.8rem;
+            color: gray;
+
+            .botaoCategoria{
+                background-color: yellow;
+                border: none;
+                color: gray;
+
+                &:hover{
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .baixoDireto{
+            display: flex;
+            text-align: center;
+            margin-left: 10rem;
+            flex-direction: row;
+            gap: 1rem;
+            font-size: 0.8rem;
+            color: rgb(27, 27, 27);
+
+            .botaoCriar{
+                background-color: yellow;
+                border: none;
+                color: rgb(27, 27, 27);
+                
+
+                &:hover{
+                    cursor: pointer;
+                }
+            }
+
+            .material-symbols-outlined{
+                font-size: 1rem;
+            }
+        }
+    }
+}
+
+.example-container {
+    width: calc(100vw - 1.7rem);
+    height: calc(100vh - 4rem);
+    margin-left: 1.5rem;
+    display: flex;
+    align-items: center;
+    text-align: start;
+
+    .material-symbols-outlined{
+        align-items: center;
+        
+    }
+
+    .menu1{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 3.5rem;
+        margin-top: 2rem;
+        gap: 0.5rem;
+        font-size: 1rem;
+        margin-right: 1.5rem;
+    }
+
+    .menu2{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 1.8rem;
+        gap: 0.5rem;
+        font-size: 0.8rem;
+        margin-right: 1.5rem;
+
+        #perfil1{
+           color: rgb(91, 188, 233);
+        }
+    }
+
+  }
+
+.principal{
+
+    overflow: hidden;
+    
+
+.cimaPerfil{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 19rem;
+    margin-top: 1.5rem;
+    width: 35rem;
+    overflow: none;
+
+    #iconePerfil{
+        font-size: 2.6rem;
+    }
+    .configCimaPerfil{
+        margin-left: 3rem;
+        display: flex;
+        align-items: center;
+    }
+
+    .cimaPerfil1{
+        margin-left: 1rem;
+        display: flex;
+        flex-direction: column;
+         }
+    }
+}
+
+
+.cimaPerfil2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+    margin-left: 19rem;
+    width: 35rem;
+    min-height: auto;
+    overflow: hidden;
+
+    .listaLi{
+    list-style:none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    text-align: start;
+    align-items: center;
+    margin-top: 2rem;
+    }
+
+.configBaixoPerfil2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    // padding-top: 1.5rem;
+    width: 25rem;
+
+    span {
+        margin-right: 10rem;
+    }
+}
+
+#iconBaixo2{
+    font-size: 2rem;
+    color: rgb(91, 188, 233) ;
+}
+
+#arrowDireita2{
+    margin-left: 5rem;
+
+}
+
+.dados{
+    padding-right: 7.2rem;
+}
+
+}
+
+
+
+.configBaixoPerfil3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    // padding-top: 1.5rem;
+    width: 25rem;
+
+
+    .dados3{
+        padding-right: 18rem;
+    }
+    .dados3-1{
+        padding-right: 7.8rem;
+    }
+}
+
+
+.configBaixoPerfil4{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    // padding-top: 1.5rem;
+    width: 25rem;
+
+.dados4{
+    padding-right: 17rem;
+}
+
+.dados4-1{
+    padding-right: 13.4rem;
+}
+}
+
+.configBaixoPerfil5{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    // padding-top: 1.5rem;
+    width: 30rem;
+
+.dados5{
+    padding-right: 23rem;
+}
+
+.dados5-1{
+    padding-right: 11rem;
+    
+}
+
+}
+
+.configBaixoPerfil6{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    // padding-top: 1.5rem;
+    width: 30rem;
+
+.dados6{
+    padding-right: 23rem;
+}
+
+.dados6-1{
+    padding-right: 8.7rem;
+    
+}
+
+}
+
+.configBaixoPerfil7{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    // padding-top: 1.5rem;
+    width: 30rem;
+
+.dados7{
+    padding-right: 22rem;
+}
+
+.dados7-1{
+    padding-right: 7.7rem;
+    
+}
+
+}
+
+.configBaixoPerfil8{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    // padding-top: 1.5rem;
+    width: 30rem;
+
+.dados8{
+    padding-right: 23rem;
+}
+
+.dados8-1{
+    padding-right: 17rem;
+    
+}
+}
+
+
+
+
+
+
